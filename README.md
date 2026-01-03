@@ -243,7 +243,7 @@ CREATE INDEX idx_fact_artist_perf
 1. **Clone Repository**
 ```bash
 git clone https://github.com/skyjames25/spotify-warehouse.git
-cd spotify-warehouse
+cd spotify_warehouse
 ```
 
 2. **Install Python Dependencies**
