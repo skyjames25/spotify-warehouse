@@ -282,11 +282,11 @@ jupyter notebook script.ipynb
 ``` 
 
 7. **Run Analytical Queries**
-### Run market share analysis
+##### Run market share analysis
 ```bash
 psql -d spotify_db -f sql/queries/01_artist_market_share.sql
 ```
-### Run track rank movement analysis
+##### Run track rank movement analysis
 ```bash
 psql -d spotify_db -f sql/queries/02_track_rank_movement.sql
 ```
@@ -295,7 +295,7 @@ psql -d spotify_db -f sql/queries/02_track_rank_movement.sql
 
 ## 📈 Key Design Decisions
 
-### 1. Exploded Fact Table vs. Bridge Table
+##### 1. Exploded Fact Table vs. Bridge Table
 
 **Decision:** Exploded fact table (one row per artist-track-date)
 
