@@ -276,19 +276,17 @@ psql -d spotify_db -f sql/schema.sql
 ```
 
 6. **Execute ETL Pipeline**  
-## On the jupyter webpage, select the 'Restart and run all cells' option, Ctrl+C(in terminal) to close the notebook after running finish.
+### On the jupyter webpage, select the 'Restart and run all cells' option, Ctrl+C(in terminal) to close the notebook after running finish.
 ```bash
 jupyter notebook script.ipynb
 ``` 
-```bash
-
 
 7. **Run Analytical Queries**
-# Run market share analysis
+### Run market share analysis
 ```bash
 psql -d spotify_db -f sql/queries/01_artist_market_share.sql
 ```
-## Run track rank movement analysis
+### Run track rank movement analysis
 ```bash
 psql -d spotify_db -f sql/queries/02_track_rank_movement.sql
 ```
