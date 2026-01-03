@@ -264,6 +264,8 @@ wget https://jdbc.postgresql.org/download/postgresql-42.7.1.jar
 4. **Create PostgreSQL Database**
 ```bash
 psql -d postgres
+```
+```bash
 CREATE DATABASE spotify_db;
 \q
 ```
@@ -273,18 +275,21 @@ CREATE DATABASE spotify_db;
 psql -d spotify_db -f sql/schema.sql
 ```
 
-6. **Execute ETL Pipeline**   
+6. **Execute ETL Pipeline**  
+# On the jupyter webpage, select the 'Restart and run all cells' option, Ctrl+C(in terminal) to close the notebook after running finish.
 ```bash
 jupyter notebook script.ipynb
-# On the jupyter webpage, run all cells
-```
+``` 
+```bash
+
 
 7. **Run Analytical Queries**
-```bash
 # Run market share analysis
+```bash
 psql -d spotify_db -f sql/queries/01_artist_market_share.sql
-
+```
 # Run track rank movement analysis
+```bash
 psql -d spotify_db -f sql/queries/02_track_rank_movement.sql
 ```
 
